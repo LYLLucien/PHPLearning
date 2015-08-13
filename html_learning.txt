@@ -1,0 +1,57 @@
+&lt: <
+&gt: >
+&nbsp: space
+
+body 标签:
+text 字体颜色
+bgcolor 背景颜色
+background 背景图片
+br 换行
+nobr 不换行，双标签
+p 段落
+center 居中
+pre 按源代码显示
+ul 无序列表
+ol 有序列表
+dl 自定义列表
+dt 自定义标题
+dd 自定义列表内容
+hr 到航线
+
+列表
+1. 有序列表 ol
+2. 无序列表 ul
+3. 自定义列表 dl
+
+span 最常用的标签，无意义标签
+div 无意义，块标签
+
+img属性：
+src
+width，height
+alt 没找到图片时加载内容
+title 鼠标移到图片上时显示文字
+usemap 找到图片上的坐标画形状，增加图片点击事件
+example:
+<img src = "img.png" usemap="#mymap">
+		<map name="mymap">
+			<area shape="circle" coords="20,20,20" href="http://www.baidu.com"/>
+ 		</map>
+area标签
+shape标签
+coords标签
+
+html img 静态资源加载地址：
+1.img/img.png
+2./test/img/img.png
+加载静态资源的标签
+1.<img src="img.png">
+2.<link rel="stylesheet" href="a.css">
+3<script src="a.js"></script>
+4.<a href="a.html"></a>
+
+所有标签上都有的属性：
+1.title
+2.style
+3.id
+4.class
