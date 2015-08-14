@@ -1,0 +1,140 @@
+&lt: <
+&gt: >
+&nbsp: space
+
+body 标签:
+text 字体颜色
+bgcolor 背景颜色
+background 背景图片
+br 换行
+nobr 不换行，双标签
+p 段落
+center 居中
+pre 按源代码显示
+ul 无序列表
+ol 有序列表
+dl 自定义列表
+dt 自定义标题
+dd 自定义列表内容
+hr 到航线
+
+列表
+1. 有序列表 ol
+2. 无序列表 ul
+3. 自定义列表 dl
+
+span 最常用的标签，无意义标签
+div 无意义，块标签
+
+img属性：
+src
+width，height
+alt 没找到图片时加载内容
+title 鼠标移到图片上时显示文字
+usemap 找到图片上的坐标画形状，增加图片点击事件
+example:
+<img src = "img.png" usemap="#mymap">
+		<map name="mymap">
+			<area shape="circle" coords="20,20,20" href="http://www.baidu.com"/>
+ 		</map>
+area标签
+shape标签
+coords标签
+
+html img 静态资源加载地址：
+1.img/img.png
+2./test/img/img.png
+加载静态资源的标签
+1.<img src="img.png">
+2.<link rel="stylesheet" href="a.css">
+3<script src="a.js"></script>
+4.<a href="a.html"></a>
+
+所有标签上都有的属性：
+1.title
+2.style
+3.id
+4.class
+
+锚点-a标签：
+<a name="top"></a>
+
+超链接-a标签：
+<a href="http://www.baidu.com" target="_blank">百度</a>
+target属性的值：
+1. _top
+2. _self
+3. _blank
+4. _parent
+5. 窗口名称
+
+表格-table标签：
+table
+tr行
+td列
+
+表单-form标签：
+type：
+text, password, submit, reset, checkbox, radio
+action="reg.php"
+method="get"/"post"
+maxlength
+readonly 不能改，可以提交，白色底
+disabled 不能改，不能提交，灰色底
+
+文本元素：
+<input type="text" name="">
+密码元素
+<input type="password" name="">
+提交
+<input type="submit" value="submit">
+重置
+<input type="reset" value="reset">
+单选
+<input type="radio" name="">
+注：1. name和value必须有
+	2. name必须相同
+	3. id必须有
+	4. label用for连接到前面的input的id上
+
+多选
+<input type="checkbox" name="">
+注：1. name和value必须有
+	2. name必须不同或者为同名数组
+	3. id必须有
+	4. label用for连接到前面的input的id上
+
+下拉框
+<select name="cityname">
+				<option >select city</option>
+				<option value="hongkong">hongkong</option>
+				<option value="beijing">beijing</option>
+			</select>
+
+区域框
+<textarea></textarea>
+1.name
+2.不能写value
+
+框架-frameset标签：
+<frameset>
+	<frame src="">
+	<frame src="">
+</frameset>
+框架属性：
+1. frameborder 0|1 是否有边框
+2. border 10px 边框宽度
+3. bordercolor 边框颜色, chrome only
+frame属性
+1. name 窗口名称
+2. src html页面地址
+3. noresize yes|no|auto 不能改变大小
+4. scrolling no|auto
+
+内嵌框架-iframe标签:
+属性：
+1. src 打开的页面
+2. frameborder 0|1有没有边框
+3. width，height
+4. scrolling no|auto 有无滚动条
+
